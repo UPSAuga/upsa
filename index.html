@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSA - Uganda Pharmaceutical Students Association</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged image">
+            <button id="lightbox-close" class="lightbox-close">&times;</button>
+            <button id="lightbox-prev" class="lightbox-nav lightbox-prev">&larr;</button>
+            <button id="lightbox-next" class="lightbox-nav lightbox-next">&rarr;</button>
+        </div>
+    </div>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/mainupsa.jpg" alt="UPSA LOGO" class="logo">
+                <span class="logo-text">UPSAUganda</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="#" class="nav-link" data-page="cabinet">Cabinet</a></li>
+                    <li><a href="#" class="nav-link" data-page="medxmentor">Medxmentor</a></li>
+                    <li><a href="#" class="nav-link" data-page="events">Events</a></li>
+                    <li><a href="#" class="nav-link" data-page="news">News</a></li>
+                    <li><a href="#" class="nav-link" data-page="schools">Schools</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="cabinet">Cabinet</a></li>
+                <li><a href="#" class="nav-link" data-page="medxmentor">Medxmentor</a></li>
+                <li><a href="#" class="nav-link" data-page="events">Events</a></li>
+                <li><a href="#" class="nav-link" data-page="news">News</a></li>
+                <li><a href="#" class="nav-link" data-page="schools">Schools</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon theme-icon"></i>
+    </button>
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <img src="images/mainupsa.jpg" alt="UPSA LOGO" class="logo2">
+                    <h1 class="hero-title">Uganda Pharmaceutical Students Association</h1>
+                    <p class="hero-subtitle"> Nurturing A Holistic Pharmacist.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary nav-link" data-page="about">Learn More</a>
+                        <a href="#" class="btn btn-secondary nav-link" data-page="contactForm">Contact Us</a>
+                        <a href="https://wa.me/256776717340?text=I%20would%20love%20to%20join%20UPSA,%20My%20name%20is...." target="_blank" class="btn btn-success">
+                            <i class="fab fa-whatsapp"></i> Join Us
+                        </a>
+                    </div>
+                    <div class="scroll-down-container">
+                        <div class="scroll-down">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- News Highlights -->
+            <section class="news-highlights">
+                <div class="container">
+                    <h2 class="section-title">Latest News</h2>
+                    <div class="news-grid">
+                        <div class="news-card" onclick="viewArticle('future-pharmacy')">
+                            <div class="news-image">
+                                <img src="images/pha.jpg" alt="News 2" class="news-image" data-index="1" />
+                            </div>
+                            <div class="news-content">
+                                <h3 class="news-title">The Future of Pharmacy Practice in Uganda</h3>
+                                <p class="news-author">Dongo Sira</p>
+                                <p class="news-date">AUG 15, 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-card" onclick="viewArticle('community-pharmacy')">
+                            <div class="news-image">
+                                <img src="images/pha2.jpg" alt="News 2" class="news-image" data-index="1" />
+                            </div>
+                            <div class="news-content">
+                                <h3 class="news-title">Community Pharmacy in Rural Areas</h3>
+                                <p class="news-author">John Smith</p>
+                                <p class="news-date">May 12, 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-card" onclick="viewArticle('upsa-advocacy')">
+                            <div class="news-image">
+                                <img src="images/sym09.jpg" alt="News 2" class="news-image" data-index="1" />
+                            </div>
+                            <div class="news-content">
+                                <h3 class="news-title">UPSA Advocacy for Improved Pharmacy Education</h3>
+                                <p class="news-author">UPSA PR Team</p>
+                                <p class="news-date">May 10, 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-card" onclick="viewArticle('access-medicines')">
+                            <div class="news-image">
+                                <img src="images/pha3.jpg" alt="News 2" class="news-image" data-index="1" />
+                            </div>
+                            <div class="news-content">
+                                <h3 class="news-title">Access to Medicines in Uganda</h3>
+                                <p class="news-author">Pharmaceutical Advocates</p>
+                                <p class="news-date">May 8, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Follow Us -->
+            <section class="follow-us">
+                <div class="container">
+                    <div class="follow-content">
+                        <h2 class="follow-title">Follow us on X-Space</h2>
+                        <a href="https://x.com/UpsaUganda?t=FBAZ00aZQBx4D5VwXDiEow&s=09" target="_blank" rel="noopener noreferrer">
+                        <div class="follow-info">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <span>@UPSA_Uganda</span>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <h3>Address</h3>
+                                    <p>Pharmacy House</p>
+                                    <p>P.O. Box 3774, Kyambogo, Uganda</p>
+                                </div>
+                                <div class="info-item">
+                                    <h3>Phone Numbers</h3>
+                                    <p>+256 784 915546 -President</p>
+                                    <p>+256 758 876133 -PRO</p>
+                                </div>
+                                <div class="info-item">
+                                    <h3>WhatsApp Channel</h3>
+                                    <a href="https://whatsapp.com/channel/0029Vafrk3n6GcGAbblz9n0v" target="_blank" class="whatsapp-link">
+                                        <i class="fab fa-whatsapp"></i> Chat with us
+                                    </a>
+                                </div>
+                                <div class="info-item">
+                                    <h3>ICT Chairperson</h3>
+                                    <p>Aryek Joshua</p>
+                                    <a href="https://wa.me/qr/AU7574BJ5KHAH1" target="_blank">0776 717 340</a>
+                                </div>
+                                <div class="info-item">
+                                    <h3>Website Developer</h3>
+                                    <p>Aryek Joshua</p>
+                                    <a href="https://wa.me/qr/AU7574BJ5KHAH1" target="_blank">0776 717 340</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- About Page -->
+        <div id="about" class="page">
+            <div class="container">
+                <h1 class="section-title">About UPSA</h1>
+                <section class="about-section">
+                    <h2 class="about-title">What is UPSA?</h2>
+                    <p class="about-text">
+                        The Uganda Pharmaceutical Students Association (UPSA) is the national body representing all pharmaceutical students in Uganda. It serves as a platform for collaboration, professional development, and advocacy within the pharmaceutical education sector.
+                    </p>
+                    <p class="about-text">
+                        The Association is a national non-partisan, non-religious, non-profit umbrella body uniting 
+pharmacy students and recent pharmacy graduates in Uganda. 
+                    </p>
+                </section>
+         <!-- Patron Section -->
+            <div class="patron-section3">
+              <h3 class="about-title">Our Patron</h3>
+              <div class="patron-card">
+                <div class="cabinet-image3">
+                  <img src="images/Dr.Anyase.jpg" alt="Dr. Anyase Amaza Ronald" />
+                </div>
+                <div class="cabinet-info">
+                  <h3 class="cabinet-name2">Dr. Anyase Amaza Ronald</h3>
+                  <p class="cabinet-position2">National Patron, UPSA</p>
+                  <p class="cabinet-role">
+                    A distinguished academic and leader in pharmacy education, Dr.Anyase provides strategic guidance and mentorship to UPSA. His expertise in clinical pharmacy and health systems strengthens our mission.
+                  </p>
+                  <a href="https://wa.me/256752033629" target="_blank" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+                <section class="about-section">
+                    <h2 class="about-title">Who is UPSA?</h2>
+                    <p class="about-text">
+                        The Uganda Pharmaceutical Students’ Association (UPSA) is the national umbrella body that unites and represents all pharmacy students in Uganda. Established to promote academic excellence, professional development, and collaboration among future pharmacists, UPSA serves as a central platform for advocacy, networking, and innovation within the pharmaceutical student community.
+
+Currently, UPSA is composed of three mother associations from the leading pharmacy training institutions in Uganda:
+                    </p>
+                    <div class="schools-grid">
+                        <div class="school-card">
+                            <img src="images/kiupsa-logo.png" alt="KIUPSA" class="school-logo">
+                            <h3 class="school-name">KIUPSA</h3>
+                            <p class="school-university">Kampala International University</p>
+                        </div>
+                        <div class="school-card">
+                            <img src="images/mupsa-logo.jpg" alt="MUPSA" class="school-logo">
+                            <h3 class="school-name">MUPSA</h3>
+                            <p class="school-university">Makerere University</p>
+                        </div>
+                        <div class="school-card">
+                            <img src="images/mbupsa-logo.jpg" alt="MBUPSA" class="school-logo">
+                            <h3 class="school-name">MBUPSA</h3>
+                            <p class="school-university">Mbarara University</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="about-section">
+                    <h2 class="about-title">History</h2>
+                    <p class="about-text">
+                        The Association was founded in 2012, and later revived to functionality in 2016 by 
+representatives of three pharmacy school students’ Associations i.e. Kampala International 
+University Pharmacy Students’ Association (KIUPSA), Makerere University Pharmacy 
+Students’ Association (MUPSA), and Mbarara University Pharmacy Students’ Association 
+(MBUPSA
+                    </p>
+                    <p class="about-text">
+                        The association has successfully organized numerous national conferences, medical outreach programs, and advocacy campaigns, significantly contributing to the development of pharmacy education in Uganda.
+                    </p>
+                </section>
+                <section class="about-section">
+                    <h2 class="about-title">Vision</h2>
+                    <p class="about-text">
+                        To be the leading pharmacy student’s organisation in the 
+World representing its members and advancing the profession of Pharmacy. 
+                    </p>
+                </section>
+                <section class="about-section">
+                    <h2 class="about-title">Mission</h2>
+                    <p class="about-text">
+                        The Mission of the Association is; to promote unity among pharmacy students and its members 
+nationally through advocacy and professional development in nurturing a holistic pharmacist.  
+                    </p>
+                    <p class="about-text">
+                         The Core Values of the Association is below following in form of the acronym UPSA.  
+                    </p>
+                    <ul class="about-text">
+                    <li>Unity</li>
+                    <li>Professionalism </li> 
+                    <li>Sociability </li>
+                    <li>Accountability</li>     
+                    </ul>
+                </section>
+                <section class="about-section">
+                    <h2 class="about-title">Objectives</h2>
+                    <ul class="about-text">
+                        <li>Promote unity amongst all pharmacy students and its members nationally, and establish and/or 
+maintain ties with other organisations having related or similar objects. </li>
+                        <li>Contribute to the promotion and maintenance of good health through advocacy for health 
+policy change and the provision of pharmaceutical services to the communities in Uganda. </li>
+                        <li>Promote and participate in research and innovations in the field of pharmacy. </li>
+                        <li>Contribute to the promotion of proper drug usage and safety. </li>
+                        <li>Avail a voice and channel through which challenges in pharmacy practice and pharmacy 
+education can be discussed and call for reforms relating to that. </li>
+                        <li>Advocate for, promote, protect the interests and provide services for the wellbeing of its 
+members in relation to the study and practice of the profession of pharmacy. </li>
+                        <li>Uphold and nurture professional integrity and standards of Pharmacy Students’ Code 
+of Conduct.  </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <!-- Cabinet Page -->
+        <div id="cabinet" class="page">
+            <div class="container">
+            <div class="cabinet-selector-container">
+  <label for="cabinet-year" class="selector-label">Select Cabinet Year</label>
+  <div class="dropdown-wrapper">
+    <select id="cabinet-year" class="cabinet-dropdown" aria-label="Select cabinet year">
+      <option value="2025-2026" selected>2025 / 2026</option>
+      <option value="2026-2027">2026 / 2027</option>
+      <option value="2027-2028">2027 / 2028</option>
+      <option value="2028-2029">2028 / 2029</option>
+      <option value="2029-2030">2029 / 2030</option>
+      <option value="2030-2031">2030 / 2031</option>
+      <option value="2031-2032">2031 / 2032</option>
+      <option value="2032-2033">2032 / 2033</option>
+      <option value="2033-2034">2033 / 2034</option>
+      <option value="2034-2035">2034 / 2035</option>
+    </select>
+    <div class="dropdown-arrow">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </div>
+</div>
+                <h1 class="section-title">UPSA Cabinet</h1>
+                <p class="about-text text-center mb-10">Meet the dedicated leaders shaping the future of pharmacy education in Uganda. Our cabinet members bring passion, expertise, and commitment to advancing pharmaceutical student interests.</p>
+                <div class="cabinet-grid">
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/president.jpg" alt="Precious Gracious Ocen">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Precious Gracious Ocen</h3>
+                                <p class="cabinet-position">President</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Leads the association, represents UPSA in official capacities, and oversees strategic direction.</p>
+                            <a href="https://wa.me/256784915546" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/vp.jpg" alt="Katiito Samantha Penninah">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Katiito Samantha Penninah</h3>
+                                <p class="cabinet-position">Vice President</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Assists the President, assumes leadership in their absence, and coordinates internal affairs.</p>
+                            <a href="https://wa.me/256759563570" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/gen sec.jpg" alt="Namanya Kauthar">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Namanya Kauthar</h3>
+                                <p class="cabinet-position">General Secretary</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Manages official records, correspondence, and ensures proper implementation of decisions.</p>
+                            <a href="https://wa.me/256786920591" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/org sec.jpg" alt="Lubega Joel Collins">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Lubega Joel Collins</h3>
+                                <p class="cabinet-position">Organizing Secretary</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Coordinates events, meetings, and logistical arrangements for association activities.</p>
+                            <a href="https://wa.me/256757323816" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/ict.jpg" alt="Aryek Joshua">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Aryek Joshua</h3>
+                                <p class="cabinet-position">ICT Chairperson</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Oversees digital operations, website management, and communication technology.</p>
+                            <a href="https://wa.me/256776717340" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/finance.jpg" alt="Katugume Royce">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Katugume Royce</h3>
+                                <p class="cabinet-position">Finance Secretary</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Manages financial resources, prepares budgets, and ensures proper financial reporting.</p>
+                            <a href="https://wa.me/256771968906" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/pro.jpg" alt="Mugerwa Eric">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Mugerwa Eric</h3>
+                                <p class="cabinet-position">PRO</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Manages public relations, media communication, and external partnerships.</p>
+                            <a href="https://wa.me/256758876133" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/muk.jpg" alt="Nantongo Diana Gorret">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Nantongo Diana Gorret</h3>
+                                <p class="cabinet-position">University Coordinator - MUK</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Coordinates activities among MUPSA students and liaises with national leadership.</p>
+                            <a href="https://wa.me/256760462634" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/kiu.jpg" alt="Kakande Sharifah">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Kakande Sharifah</h3>
+                                <p class="cabinet-position">University Coordinator - KIU</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Coordinates activities among KIUPSA students and liaises with national leadership.</p>
+                            <a href="https://wa.me/256786235943" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/mbu.jpg" alt="Kigenyi Innocent">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Kigenyi Innocent</h3>
+                                <p class="cabinet-position">University Coordinator - MUST</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Coordinates activities among MBUPSA students and liaises with national leadership.</p>
+                            <a href="https://wa.me/256769092962" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info mt-10 p-6">
+                    <h2 class="about-title mb-4">Contact the Cabinet</h2>
+                    <p class="about-text mb-4">
+                        For general inquiries or to reach any cabinet member directly, please use the WhatsApp link below or contact our ICT Chairperson:
+                    </p>
+                    <div class="flex items-center">
+                        <i class="fab fa-whatsapp mr-2 text-green-600"></i>
+                        <a href="https://wa.me/qr/AU7574BJ5KHAH1" target="_blank" class="text-green-600 hover:underline">
+                            +256 776 717 340
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cabinet Page -->
+        <div id="cabinet" class="page">
+            <div class="container">
+                <h1 class="section-title">UPSA Cabinet</h1>
+                <p class="about-text text-center mb-10">Meet the dedicated leaders shaping the future of pharmacy education in Uganda. Our cabinet members bring passion, expertise, and commitment to advancing pharmaceutical student interests.</p>
+                <div class="cabinet-grid">
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/president.jpg" alt="Precious Gracious Ocen">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Precious Gracious Ocen</h3>
+                                <p class="cabinet-position">President</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Leads the association, represents UPSA in official capacities, and oversees strategic direction.</p>
+                            <a href="https://wa.me/256784915546" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/vp.jpg" alt="Katiito Samantha Penninah">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Katiito Samantha Penninah</h3>
+                                <p class="cabinet-position">Vice President</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Assists the President, assumes leadership in their absence, and coordinates internal affairs.</p>
+                            <a href="https://wa.me/256759563570" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/gen sec.jpg" alt="Namanya Kauthar">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Namanya Kauthar</h3>
+                                <p class="cabinet-position">General Secretary</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Manages official records, correspondence, and ensures proper implementation of decisions.</p>
+                            <a href="https://wa.me/256786920591" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/org sec.jpg" alt="Lubega Joel Collins">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Lubega Joel Collins</h3>
+                                <p class="cabinet-position">Organizing Secretary</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Coordinates events, meetings, and logistical arrangements for association activities.</p>
+                            <a href="https://wa.me/256757323816" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/ict.jpg" alt="Aryek Joshua">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Aryek Joshua</h3>
+                                <p class="cabinet-position">ICT Chairperson</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Oversees digital operations, website management, and communication technology.</p>
+                            <a href="https://wa.me/256776717340" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/finance.jpg" alt="Katugume Royce">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Katugume Royce</h3>
+                                <p class="cabinet-position">Finance Secretary</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Manages financial resources, prepares budgets, and ensures proper financial reporting.</p>
+                            <a href="https://wa.me/256771968906" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/pro.jpg" alt="Mugerwa Eric">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Mugerwa Eric</h3>
+                                <p class="cabinet-position">PRO</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Manages public relations, media communication, and external partnerships.</p>
+                            <a href="https://wa.me/256758876133" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/muk.jpg" alt="Nantongo Diana Gorret">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Nantongo Diana Gorret</h3>
+                                <p class="cabinet-position">University Coordinator - MUK</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Coordinates activities among MUPSA students and liaises with national leadership.</p>
+                            <a href="https://wa.me/256760462634" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="https://picsum.photos/seed/mu/300/400" alt="Kakande Sharifah">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Kakande Sharifah</h3>
+                                <p class="cabinet-position">University Coordinator - KIU</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Coordinates activities among KIUPSA students and liaises with national leadership.</p>
+                            <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-card">
+                        <div class="cabinet-image">
+                            <img src="images/mbu.jpg" alt="Kigenyi Innocent">
+                            <div class="cabinet-overlay">
+                                <h3 class="cabinet-name">Kigenyi Innocent</h3>
+                                <p class="cabinet-position">University Coordinator - MUST</p>
+                            </div>
+                        </div>
+                        <div class="cabinet-info">
+                            <p class="cabinet-role">Coordinates activities among MBUPSA students and liaises with national leadership.</p>
+                            <a href="https://wa.me/256769092962" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info mt-10 p-6">
+                    <h2 class="about-title mb-4">Contact the Cabinet</h2>
+                    <p class="about-text mb-4">
+                        For general inquiries or to reach any cabinet member directly, please use the WhatsApp link below or contact our ICT Chairperson:
+                    </p>
+                    <div class="flex items-center">
+                        <i class="fab fa-whatsapp mr-2 text-green-600"></i>
+                        <a href="https://wa.me/qr/AU7574BJ5KHAH1" target="_blank" class="text-green-600 hover:underline">
+                            +256 776 717 340
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- MedXMentor Page -->
+<div id="medxmentor" class="page">
+  <div class="container">
+    <h1 class="section-title">MedXMentor</h1>
+    <p class="about-text text-center mb-10">
+      Empowering future pharmacists through structured mentorship, career guidance, and professional development.
+    </p>
+
+    <!-- What is MedXMentor? -->
+    <section class="about-section">
+      <h2 class="about-title">What is MedXMentor?</h2>
+      <p class="about-text">
+        MedXMentor is a flagship mentorship initiative by the Uganda Pharmaceutical Students Association (UPSA) 
+        that connects pharmacy students with experienced professionals and senior peers. The program aims to bridge 
+        the gap between academic training and real-world pharmacy practice through personalized guidance, skill-building 
+        workshops, and career support.
+      </p>
+      <p class="about-text">
+        Whether you're seeking academic help, career advice, or clinical exposure, MedXMentor provides a structured 
+        platform for growth, networking, and holistic development.
+      </p>
+    </section>
+
+    <!-- Team Members -->
+    <section class="about-section">
+      <h2 class="about-title">Our Team</h2>
+      <div class="cabinet-grid">
+        <div class="cabinet-card">
+          <div class="cabinet-image">
+            <img src="images/Team Lead.jpg" alt="Kyahurwa Nancy">
+            <div class="cabinet-overlay">
+              <h3 class="cabinet-name">Kyahurwa Nancy</h3>
+              <p class="cabinet-position">Team Lead</p>
+            </div>
+          </div>
+          <div class="cabinet-info">
+            <p class="cabinet-role">Leads the MedXMentor program, oversees strategy, partnerships, and national coordination.</p>
+            <a href="https://wa.me/256784915546" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="cabinet-card">
+          <div class="cabinet-image">
+            <img src="images/fin2.jpg" alt="AKANDONDA TIMOTHY ALDO">
+            <div class="cabinet-overlay">
+              <h3 class="cabinet-name">AKANDONDA TIMOTHY A.</h3>
+              <p class="cabinet-position">Finance Secretary</p>
+            </div>
+          </div>
+          <div class="cabinet-info">
+            <p class="cabinet-role">Manages funding, budgeting, and financial sustainability of the mentorship program.</p>
+            <a href="https://wa.me/256756136463" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="cabinet-card">
+          <div class="cabinet-image">
+            <img src="images/pro2.jpg" alt="NIMUSIIMA PRAISE DALLEN">
+            <div class="cabinet-overlay">
+              <h3 class="cabinet-name">NIMUSIIMA PRAISE DALLEN</h3>
+              <p class="cabinet-position">PUBLIC RELATIONS OFFICER</p>
+            </div>
+          </div>
+          <div class="cabinet-info">
+            <p class="cabinet-role">Handles publicity, outreach, and stakeholder engagement for MedXMentor.</p>
+            <a href="https://wa.me/256785983358" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="cabinet-card">
+          <div class="cabinet-image">
+            <img src="images/teaml.jpg" alt="KAMBABAZI RITAH">
+            <div class="cabinet-overlay">
+              <h3 class="cabinet-name">KAMBABAZI RITAH</h3>
+              <p class="cabinet-position">Technical Lead</p>
+            </div>
+          </div>
+          <div class="cabinet-info">
+            <p class="cabinet-role">Oversees digital platforms, registration systems, and online mentorship tools.</p>
+            <a href="https://wa.me/256754925111" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="cabinet-card">
+          <div class="cabinet-image">
+            <img src="images/mbup.jpg" alt="Ssemugoma Ibrahim">
+            <div class="cabinet-overlay">
+              <h3 class="cabinet-name">Ssemugoma Ibrahim</h3>
+              <p class="cabinet-position">University Coordinator-MBU</p>
+            </div>
+          </div>
+          <div class="cabinet-info">
+            <p class="cabinet-role">Coordinates mentorship activities for Makerere University students.</p>
+            <a href="https://wa.me/256741879958" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="cabinet-card">
+          <div class="cabinet-image">
+            <img src="images/kiu2.jpg" alt="Nakawungu Catherine">
+            <div class="cabinet-overlay">
+              <h3 class="cabinet-name">Nakawungu Catherine</h3>
+              <p class="cabinet-position">University Coordinator - KIU</p>
+            </div>
+          </div>
+          <div class="cabinet-info">
+            <p class="cabinet-role">Facilitates mentorship engagement for KIUPSA members.</p>
+            <a href="https://wa.me/256706267813" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="cabinet-card">
+          <div class="cabinet-image">
+            <img src="images/must2.jpg" alt="Mugoya Rebecca Charity">
+            <div class="cabinet-overlay">
+              <h3 class="cabinet-name">Mugoya Rebecca Charity</h3>
+              <p class="cabinet-position">University Coordinator - MUST</p>
+            </div>
+          </div>
+          <div class="cabinet-info">
+            <p class="cabinet-role">Organizes mentorship sessions and peer support for MBUPSA students.</p>
+            <a href="https://wa.me/256769092962" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="cabinet-card">
+          <div class="cabinet-image">
+            <img src="images/monitoring.jpg" alt="M&E Officer">
+            <div class="cabinet-overlay">
+              <h3 class="cabinet-name">MUJJUMBI DANIEL ALPHA</h3>
+              <p class="cabinet-position">Monitoring & Evaluation Officer</p>
+            </div>
+          </div>
+          <div class="cabinet-info">
+            <p class="cabinet-role">Tracks program impact, collects feedback, and ensures continuous improvement.</p>
+            <a href="https://wa.me/256705655110" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Offered -->
+    <section class="about-section">
+      <h2 class="about-title">Services Offered</h2>
+      <ul class="about-text ml-6 list-disc">
+        <li>One-on-One Mentorship Pairing</li>
+        <li>Career Guidance & CV Review</li>
+        <li>Academic Support & Study Strategies</li>
+        <li>Soft Skills & Communication Training</li>
+        <li>Exposure to Clinical & Community Pharmacy Practice</li>
+        <li>Networking with Professionals & Alumni</li>
+      </ul>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="about-section">
+      <h2 class="about-title">What Mentees Say</h2>
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-card">
+          <p>"MedXMentor helped me gain clarity on my career path and connected me with a practicing pharmacist who guided me through internships and job applications."</p>
+          <footer>— Sarah, Year 3 Student, MUK</footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>"The workshops on CV writing and interview skills were game-changers. I landed my first pharmacy placement thanks to this program."</p>
+          <footer>— James, Year 2 Student, KIU</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="contact-info mt-10 p-6">
+      <h2 class="about-title mb-4">Get Involved</h2>
+      <p class="about-text mb-4">
+        Interested in becoming a mentor or mentee? Reach out to us via WhatsApp to learn more or join the program.
+      </p>
+      <div class="flex items-center">
+        <i class="fab fa-whatsapp mr-2 text-green-600"></i>
+        <a href="https://wa.me/256776717340" target="_blank" class="text-green-600 hover:underline">
+          +256 776 717 340 (ICT Chairperson)
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- Events Page -->
+        <div id="events" class="page">
+            <div class="container">
+                <h1 class="section-title">UPSA Events</h1>
+                <p class="about-text text-center mb-10">Explore our impactful events that bring together pharmaceutical students, professionals, and communities to advance healthcare and education.</p>
+                <section class="events-section">
+                    <h2 class="about-title">Medical Camp</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="about-text mb-4">
+                                Our annual Medical Camp is a flagship outreach program that provides free healthcare services to underserved communities across Uganda. Students from all member associations participate in this initiative, gaining practical experience while making a difference.
+                            </p>
+                            <p class="about-text mb-4">
+                                The camp typically lasts for a week and includes general consultations, basic laboratory tests, medication distribution, and health education sessions. It's an opportunity for students to apply their knowledge in real-world settings and develop essential clinical skills.
+                            </p>
+                            <p class="about-text">
+                                In 2024, we successfully conducted medical camps in three districts: Nakaseke, Katakwi, and Sironko, serving over 2,000 patients and distributing essential medications to those in need.
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="gallery-tabs">
+                                <div class="gallery-tab camp active" data-gallery="camp">Medical Camp</div>
+                                <div class="gallery-tab symposium" data-gallery="symposium">Symposium</div>
+                            </div>
+                            <div class="gallery camp-gallery">
+                                <div class="gallery-item" data-index="0">
+                                    <img src="images/med01.jpg" alt="Medical Camp 1">
+                                </div>
+                                <div class="gallery-item" data-index="1">
+                                    <img src="images/med02.jpg" alt="Medical Camp 2">
+                                </div>
+                                <div class="gallery-item" data-index="2">
+                                    <img src="images/med03.jpg" alt="Medical Camp 3">
+                                </div>
+                                <div class="gallery-item" data-index="3">
+                                    <img src="images/med04.jpg" alt="Medical Camp 4">
+                                </div>
+                                <div class="gallery-item" data-index="4">
+                                    <img src="images/med05.jpg" alt="Medical Camp 5">
+                                </div>
+                            </div>
+                            <div class="gallery symposium-gallery hidden">
+                                <div class="gallery-item" data-index="5">
+                                    <img src="images/sym01.jpg" alt="Symposium 1">
+                                </div>
+                                <div class="gallery-item" data-index="6">
+                                    <img src="images/sym02.jpg" alt="Symposium 2">
+                                </div>
+                                <div class="gallery-item" data-index="7">
+                                    <img src="images/sym03.jpg" alt="Symposium 3">
+                                </div>
+                                <div class="gallery-item" data-index="8">
+                                    <img src="images/sym04.jpg" alt="Symposium 4">
+                                </div>
+                                <div class="gallery-item" data-index="9">
+                                    <img src="images/sym05.jpg" alt="Symposium 5">
+                                </div>
+                                <div class="gallery-item" data-index="10">
+                                    <img src="images/sym06.jpg" alt="Symposium 6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="events-section">
+                    <h2 class="about-title">UPSA Symposium</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="about-text mb-4">
+                                The UPSA Symposium is our premier academic event that brings together pharmaceutical students, educators, and industry professionals to discuss current trends, challenges, and innovations in pharmacy practice.
+                            </p>
+                            <p class="about-text mb-4">
+                                Held annually, the symposium features keynote speeches, panel discussions, workshops, and presentations covering various aspects of pharmaceutical sciences and practice. It provides a platform for students to showcase research, exchange ideas, and network with professionals in the field.
+                            </p>
+                            <p class="about-text">
+                                The 2024 symposium focused on "Innovations in Pharmaceutical Care" and attracted over 500 participants from all pharmacy schools in Uganda and beyond. Notable speakers included industry leaders, government officials, and international experts in pharmaceutical sciences.
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <p class="about-title">Symposium Gallery Navigation</p>
+                            <div class="gallery-grid">
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="11">
+                                    <img src="images/sym07.jpg" alt="Symposium 7" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="12">
+                                    <img src="images/sym08.jpg" alt="Symposium 8" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="13">
+                                    <img src="images/sym09.jpg" alt="Symposium 9" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="14">
+                                    <img src="images/sym10.jpg" alt="Symposium 10" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="15">
+                                    <img src="images/sym11.jpg" alt="Symposium 11" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="27">
+                                    <img src="images/sym12.jpg" alt="Symposium 12" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="28">
+                                    <img src="images/sym13.jpg" alt="Symposium 13" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="29">
+                                    <img src="images/sym14.jpg" alt="Symposium 14" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="30">
+                                    <img src="images/sym15.jpg" alt="Symposium 15" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="31">
+                                    <img src="images/sym16.jpg" alt="Symposium 16" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="32">
+                                    <img src="images/sym17.jpg" alt="Symposium 17" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="33">
+                                    <img src="images/sym18.jpg" alt="Symposium 18" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="34">
+                                    <img src="images/sym19.jpg" alt="Symposium 19" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="35">
+                                    <img src="images/sym20.jpg" alt="Symposium 20" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="36">
+                                    <img src="images/sym21.jpg" alt="Symposium 21" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="37">
+                                    <img src="images/sym22.jpg" alt="Symposium 22" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="38">
+                                    <img src="images/sym23.jpg" alt="Symposium 23" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+<section id="events" class="section events-section">
+            <div class="container">
+                <div class="event-category">
+                    <h3>UPSA Handover 2025</h3>
+                    <p>Happen on the 16th of August, 2025 at the Pharmacy house.</p>
+                    <div class="gallery-grid">
+                        <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="16">
+                                    <img src="images/upsa-01.jpg" alt="Symposium 12" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="17">
+                                    <img src="images/upsa-02.jpg" alt="Symposium 13" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="18">
+                                    <img src="images/upsa-03.jpg" alt="Symposium 14" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="19">
+                                    <img src="images/upsa-04.jpg" alt="Symposium 15" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="20">
+                                    <img src="images/upsa-05.jpg" alt="Symposium 15" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="21">
+                                    <img src="images/upsa-06.jpg" alt="Symposium 16" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="22">
+                                    <img src="images/upsa-07.jpg" alt="Symposium 17" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="23">
+                                    <img src="images/upsa-08.jpg" alt="Symposium 18" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="24">
+                                    <img src="images/upsa-09.jpg" alt="Symposium 19" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="25">
+                                    <img src="images/upsa-10.jpg" alt="Symposium 20" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="26">
+                                    <img src="images/upsa-11.jpg" alt="Symposium 21" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="39">
+                                    <img src="images/upsa-12.jpg" alt="Symposium 24" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="40">
+                                    <img src="images/upsa-13.jpg" alt="Symposium 25" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="41">
+                                    <img src="images/upsa-14.jpg" alt="Symposium 26" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="42">
+                                    <img src="images/upsa-15.jpg" alt="Symposium 27" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="43">
+                                    <img src="images/upsa-16.jpg" alt="Symposium 28" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="44">
+                                    <img src="images/upsa-17.jpg" alt="Symposium 28" class="w-full h-full object-cover">
+                                </div>
+                                <div class="gallery-item h-20 rounded-md hover:ring-2 ring-blue-500 transition-all" data-index="45">
+                                    <img src="images/upsa-18.jpg" alt="Symposium 29" class="w-full h-full object-cover">
+                    </div>
+                </div>
+        </section>
+                <div class="contact-info mt-10 p-6">
+                    <h2 class="about-title mb-4">Contact for Events</h2>
+                    <p class="about-text mb-4">
+                        For information about upcoming events or to participate in our initiatives, please reach out to our events coordinator:
+                    </p>
+                    <div class="flex items-center">
+                        <i class="fab fa-whatsapp mr-2 text-blue-600"></i>
+                        <a href="https://wa.me/1234567890" target="_blank" class="text-blue-600 hover:underline">
+                            +256 700 123 456
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News Page -->
+        <div id="news" class="page">
+            <div class="container">
+                <h1 class="section-title">UPSA News</h1>
+                <p class="about-text text-center mb-10">Stay updated with the latest news, articles, and developments in pharmacy education and practice in Uganda.</p>
+                <div class="mb-10">
+                    <div class="news-tabs">
+                        <div class="news-tab active" data-tab="student">Student Articles</div>
+                        <div class="news-tab" data-tab="pr">PR Team Articles</div>
+                        <div class="news-tab" data-tab="advocacy">Advocacy Articles</div>
+                        <div class="news-tab" data-tab="news">Pharmacy News</div>
+                    </div>
+                    <div id="news-content" class="news-articles">
+                        <!-- Student Articles -->
+                        <div class="article-grid student-articles">
+                            <div class="article-card" onclick="viewArticle('future-pharmacy')">
+                                <div class="article-image">
+                                    <img src="images/pha.jpg" alt="The Future of Pharmacy Practice in Uganda">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-author">
+                                        <div class="author-avatar">O</div>
+                                        <div>
+                                            <h3 class="author-name">Jane Doe</h3>
+                                            <p class="author-date">May 15, 2025</p>
+                                        </div>
+                                    </div>
+                                    <h2 class="article-title">The Future of Pharmacy Practice in Uganda</h2>
+                                    <p class="article-summary">Exploring how technological advancements and policy changes are shaping the future of pharmacy practice in Uganda.</p>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                            <div class="article-card" onclick="viewArticle('community-pharmacy')">
+                                <div class="article-image">
+                                    <img src="images/pha2.jpg" alt="Community Pharmacy in Rural Areas">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-author">
+                                        <div class="author-avatar">J</div>
+                                        <div>
+                                            <h3 class="author-name">John Smith</h3>
+                                            <p class="author-date">May 12, 2025</p>
+                                        </div>
+                                    </div>
+                                    <h2 class="article-title">Community Pharmacy in Rural Areas</h2>
+                                    <p class="article-summary">An in-depth look at the challenges and opportunities of establishing community pharmacies in rural Uganda.</p>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PR Articles (hidden by default) -->
+                        <div class="article-grid pr-articles hidden">
+                            <div class="article-card" onclick="viewArticle('upsa-advocacy')">
+                                <div class="article-image">
+                                    <img src="images/sym09.jpg" alt="UPSA Advocacy for Improved Pharmacy Education">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-author">
+                                        <div class="author-avatar" style="background-color: #dbeafe; color: #2563eb;">PR</div>
+                                        <div>
+                                            <h3 class="author-name">UPSA PR Team</h3>
+                                            <p class="author-date">May 10, 2025</p>
+                                        </div>
+                                    </div>
+                                    <h2 class="article-title">UPSA Advocacy for Improved Pharmacy Education</h2>
+                                    <p class="article-summary">A report on UPSA's recent advocacy efforts to improve pharmacy education standards in Uganda.</p>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Advocacy Articles (hidden by default) -->
+                        <div class="article-grid advocacy-articles hidden">
+                            <div class="article-card" onclick="viewArticle('access-medicines')">
+                                <div class="article-image">
+                                    <img src="images/pha3.jpg" alt="Access to Medicines in Uganda">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-author">
+                                        <div class="author-avatar" style="background-color: #ede9fe; color: #7c3aed;">A</div>
+                                        <div>
+                                            <h3 class="author-name">Pharmaceutical Advocates</h3>
+                                            <p class="author-date">May 8, 2025</p>
+                                        </div>
+                                    </div>
+                                    <h2 class="article-title">Access to Medicines in Uganda: Challenges and Solutions</h2>
+                                    <p class="article-summary">An analysis of the current state of medicine access in Uganda and recommendations for improvement.</p>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pharmacy News (hidden by default) -->
+                        <div class="article-grid news-articles hidden">
+                            <div class="article-card" onclick="viewArticle('new-regulations')">
+                                <div class="article-image">
+                                    <img src="images/pha2.jpg" alt="New Regulations for Pharmaceutical Practice">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-author">
+                                        <div class="author-avatar" style="background-color: #fee2e2; color: #dc2626;">N</div>
+                                        <div>
+                                            <h3 class="author-name">Pharmacy News</h3>
+                                            <p class="author-date">May 5, 2025</p>
+                                        </div>
+                                    </div>
+                                    <h2 class="article-title">New Regulations for Pharmaceutical Practice</h2>
+                                    <p class="article-summary">The National Drug Authority has introduced new regulations affecting pharmaceutical practice in Uganda.</p>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                            <div class="article-card" onclick="viewArticle('digital-transformation')">
+                                <div class="article-image">
+                                    <img src="images/pha2.jpg" alt="Digital Transformation in Pharmacy">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-author">
+                                        <div class="author-avatar" style="background-color: #fee2e2; color: #dc2626;">N</div>
+                                        <div>
+                                            <h3 class="author-name">Pharmacy News</h3>
+                                            <p class="author-date">April 30, 2025</p>
+                                        </div>
+                                    </div>
+                                    <h2 class="article-title">Digital Transformation in Pharmacy</h2>
+                                    <p class="article-summary">How digital technologies are transforming pharmacy practice and education in Uganda.</p>
+                                    <a href="#" class="read-more">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info mt-10 p-6">
+                    <h2 class="about-title mb-4">How to Submit an Article</h2>
+                    <p class="about-text mb-4">
+                        We welcome contributions from students, faculty, and professionals in the pharmaceutical field. To submit an article for publication on the UPSA website:
+                    </p>
+                    <ol class="about-text ml-6 list-decimal">
+                        <li>Prepare your article in Microsoft Word or Google Docs format</li>
+                        <li>Include a short author bio and relevant images (if available)</li>
+                        <li>Email your submission to <a href="mailto:news@upsa.org" class="text-blue-600 hover:underline">news@upsa.org</a></li>
+                        <li>Our editorial team will review and contact you regarding publication</li>
+                    </ol>
+                    <p class="about-text mt-4">
+                        We look forward to featuring your insights and experiences in pharmacy education and practice!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Schools Page -->
+        <div id="schools" class="page">
+            <div class="container">
+                <h1 class="section-title">Pharmacy Schools in Uganda</h1>
+                <p class="about-text text-center mb-10">Discover the accredited pharmacy schools in Uganda and learn about their unique programs, facilities, and student organizations.</p>
+                <div class="space-y-10">
+                    <div class="school-item">
+                        <div class="school-image">
+                            <div class="school-slideshow" id="kiiupsa-slideshow">
+                                <img src="https://picsum.photos/seed/kiiupsa1/800/600" alt="KIUPSA 1" class="slideshow-image active">
+                                <img src="https://picsum.photos/seed/kiiupsa2/800/600" alt="KIUPSA 2" class="slideshow-image">
+                                <img src="https://picsum.photos/seed/kiiupsa3/800/600" alt="KIUPSA 3" class="slideshow-image">
+                            </div>
+                            <div class="school-overlay">
+                                <h2 class="school-overlay-title">KIUPSA</h2>
+                                <p class="school-overlay-subtitle">Kampala International University Pharmaceutical Students Association</p>
+                            </div>
+                        </div>
+                        <div class="school-info">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                                <div>
+                                    <h3 class="about-title mb-2">Address</h3>
+                                    <p class="about-text">P.O. Box 1234, Kampala, Uganda</p>
+                                </div>
+                                <div class="mt-4 md:mt-0">
+                                    <a href="https://wa.me/1234567890" target="_blank" class="school-contact">
+                                        <i class="fab fa-whatsapp"></i> Contact President
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="about-title mb-4">About KIUPSA</h3>
+                            <p class="about-text">KIUPSA is the pharmaceutical student association at Kampala International University, committed to excellence in pharmaceutical education and community service.</p>
+                        </div>
+                    </div>
+                    <div class="school-item">
+                        <div class="school-image">
+                            <div class="school-slideshow" id="mupsa-slideshow">
+                                <img src="https://picsum.photos/seed/mupsa1/800/600" alt="MUPSA 1" class="slideshow-image active">
+                                <img src="https://picsum.photos/seed/mupsa2/800/600" alt="MUPSA 2" class="slideshow-image">
+                                <img src="https://picsum.photos/seed/mupsa3/800/600" alt="MUPSA 3" class="slideshow-image">
+                            </div>
+                            <div class="school-overlay">
+                                <h2 class="school-overlay-title">MUPSA</h2>
+                                <p class="school-overlay-subtitle">Makerere University Pharmaceutical Students Association</p>
+                            </div>
+                        </div>
+                        <div class="school-info">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                                <div>
+                                    <h3 class="about-title mb-2">Address</h3>
+                                    <p class="about-text">College of Health Sciences, Makerere University, Kampala, Uganda</p>
+                                </div>
+                                <div class="mt-4 md:mt-0">
+                                    <a href="https://wa.me/1234567890" target="_blank" class="school-contact">
+                                        <i class="fab fa-whatsapp"></i> Contact President
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="about-title mb-4">About MUPSA</h3>
+                            <p class="about-text">MUPSA represents pharmacy students at Makerere University, promoting academic excellence, professional development, and community engagement.</p>
+                        </div>
+                    </div>
+                    <div class="school-item">
+                        <div class="school-image">
+                            <div class="school-slideshow" id="mbupsa-slideshow">
+                                <img src="https://picsum.photos/seed/mbupsa1/800/600" alt="MBUPSA 1" class="slideshow-image active">
+                                <img src="https://picsum.photos/seed/mbupsa2/800/600" alt="MBUPSA 2" class="slideshow-image">
+                                <img src="https://picsum.photos/seed/mbupsa3/800/600" alt="MBUPSA 3" class="slideshow-image">
+                            </div>
+                            <div class="school-overlay">
+                                <h2 class="school-overlay-title">MBUPSA</h2>
+                                <p class="school-overlay-subtitle">Mbarara University Pharmaceutical Students Association</p>
+                            </div>
+                        </div>
+                        <div class="school-info">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                                <div>
+                                    <h3 class="about-title mb-2">Address</h3>
+                                    <p class="about-text">P.O. Box 1234, Mbarara, Uganda</p>
+                                </div>
+                                <div class="mt-4 md:mt-0">
+                                    <a href="https://wa.me/1234567890" target="_blank" class="school-contact">
+                                        <i class="fab fa-whatsapp"></i> Contact President
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="about-title mb-4">About MBUPSA</h3>
+                            <p class="about-text">MBUPSA serves pharmacy students at Mbarara University, focusing on quality education, research, and outreach to improve healthcare in western Uganda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info mt-10 p-6">
+                    <h2 class="about-title mb-4">Join a School Association</h2>
+                    <p class="about-text mb-4">
+                        If you're a pharmacy student in Uganda, joining your school's pharmaceutical association is the first step to becoming part of UPSA. Each school association is affiliated with UPSA and offers opportunities for professional development, networking, and community service.
+                    </p>
+                    <p class="about-text">
+                        Contact your school's association president for information on how to join and participate in activities. Your involvement will help shape the future of pharmacy in Uganda!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Article Page -->
+        <div id="article" class="page">
+            <div class="container">
+                <div class="article-container">
+                   <button class="back-button" onclick="navigateTo('news')">
+                        ← Back to News
+                    </button>
+                    <article class="full-article">
+                        <header class="article-header">
+                            <h1 class="article-title" id="article-title">The Future of Pharmacy Practice in Uganda</h1>
+                            <div class="article-meta">
+                                <div class="article-author">
+                                    <div class="author-avatar">J</div>
+                                    <div>
+                                        <span class="author-name">By Jane Doe</span>
+                                        <span class="author-date">May 15, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="article-image-container">
+                            <img src="pha.jpg" alt="Pharmacy practice in Uganda" class="article-main-image">
+                        </div>
+                        <div class="article-content" id="article-content">
+                            <p>Pharmacy practice in Uganda is undergoing a significant transformation driven by technological advancements, policy changes, and evolving healthcare needs. As the country strives to achieve universal health coverage, the role of pharmacists is expanding beyond traditional dispensing functions to include clinical services, patient counseling, and public health initiatives.</p>
+                            
+                            <h2>Technological Advancements</h2>
+                            <p>The integration of digital technologies in pharmacy practice is revolutionizing how medications are managed and dispensed. Electronic prescribing systems, inventory management software, and telepharmacy services are being gradually adopted across urban centers. These technologies not only improve efficiency but also reduce medication errors and enhance patient safety.</p>
+                            
+                            <p>In rural areas, mobile health (mHealth) applications are bridging the gap between patients and healthcare providers. Pharmacists are using smartphones to conduct remote consultations, monitor chronic conditions, and provide medication adherence support to patients in remote locations.</p>
+                            
+                            <h2>Policy and Regulatory Changes</h2>
+                            <p>The National Drug Authority (NDA) has recently introduced several regulatory reforms aimed at improving pharmaceutical services. These include stricter licensing requirements for pharmacies, enhanced monitoring of drug quality, and expanded scope of practice for pharmacists. The new guidelines now allow pharmacists to initiate certain treatments for minor ailments and provide vaccinations, aligning Uganda with international best practices.</p>
+                            
+                            <p>Additionally, the Ministry of Health has developed a National Pharmaceutical Policy that emphasizes the importance of pharmaceutical care and rational use of medicines. This policy framework provides a roadmap for strengthening pharmaceutical services across all levels of the healthcare system.</p>
+                            
+                            <h2>Education and Training</h2>
+                            <p>Pharmacy education in Uganda is also evolving to meet the changing demands of the profession. The curriculum in accredited pharmacy schools now includes more clinical training, communication skills, and public health components. Interprofessional education is being promoted to foster collaboration between pharmacists and other healthcare providers.</p>
+                            
+                            <p>Continuing professional development programs are being established to ensure that practicing pharmacists stay current with the latest advances in pharmacotherapy and healthcare delivery. These programs are crucial for maintaining high standards of practice and ensuring patient safety.</p>
+                            
+                            <h2>Challenges and Opportunities</h2>
+                            <p>Despite these positive developments, several challenges remain. There is still a shortage of pharmacists, particularly in rural areas, and infrastructure limitations hinder the implementation of advanced pharmaceutical services. Supply chain issues continue to affect the availability of essential medicines, and funding for pharmaceutical services remains inadequate.</p>
+                            
+                            <p>However, these challenges also present opportunities for innovation and improvement. Public-private partnerships are emerging as a viable model for expanding pharmaceutical services. Community pharmacy initiatives are gaining traction, and there is growing recognition of the value pharmacists bring to the healthcare system.</p>
+                            
+                            <h2>The Road Ahead</h2>
+                            <p>The future of pharmacy practice in Uganda is promising. With continued investment in education, infrastructure, and policy development, pharmacists are poised to play a more central role in healthcare delivery. The Uganda Pharmaceutical Students Association (UPSA) is actively involved in advocating for the profession and preparing the next generation of pharmacists to meet the challenges and opportunities ahead.</p>
+                            
+                            <p>As we look to the future, it is clear that pharmacy practice in Uganda will continue to evolve, driven by innovation, collaboration, and a shared commitment to improving health outcomes for all Ugandans.</p>
+                        </div>
+                           <button class="back-button" onclick="navigateTo('news')">
+                        ← Back to News
+                    </button>
+                        <div class="article-share">
+                            <p>Share this article:</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#" class="social-link" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+<!-- Contact Form Page -->
+<div id="contactForm" class="page">
+  <div class="contact-hero">
+    <div class="contact-overlay"></div>
+    <div class="contact-content">
+      <!-- Logo Frame (Rounded Rectangle with White Border & Shadow) -->
+      <div class="logo-frame">
+        <img src="images/mainupsa.jpg" alt="UPSA Logo" class="logo-lg">
+      </div>
+
+      <!-- Contact Form -->
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/mblkvaee" method="POST" novalidate>
+        <h2 class="form-title">Get in Touch</h2>
+        <p class="form-subtitle">We'd love to hear from you. Fill the form below.</p>
+
+        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+        <div class="error-message" id="nameError"></div>
+
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
+        <div class="error-message" id="emailError"></div>
+
+        <textarea name="reason" id="reason" placeholder="Tell us your reason for contacting (e.g., partnership, feedback, support)" rows="4" required></textarea>
+        <div class="error-message" id="reasonError"></div>
+
+        <input type="tel" name="whatsapp" id="whatsapp" placeholder="Country code e.g +256 xxx xxx xxx" required>
+        <div class="error-message" id="whatsappError"></div>
+
+        <button type="submit" class="btn btn-submit">Send Message <span class="send-icon">→</span></button>
+      </form>
+
+      <!-- Success Message -->
+      <div id="successMessage" class="success-message">
+        <i class="fas fa-check-circle"></i>
+        <h3>Message Sent!</h3>
+        <p>Thank you for reaching out. We'll get back to you soon.</p>
+      </div>
+
+      <!-- Motto -->
+      <p class="motto">Nurturing A Holistic Pharmacist.</p>
+
+      <!-- Copyright -->
+      <p class="copyright">&copy; 2025 Uganda Pharmaceutical Students Association. All rights reserved.</p>
+    </div>
+  </div>
+</div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="images/mainupsa.jpg" alt="UPSA LOGO" class="logo">
+                    <span class="logo-text">UPSA</span>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+                            <li><a href="#" class="nav-link" data-page="cabinet">Cabinet</a></li>
+                            <li><a href="#" class="nav-link" data-page="events">Events</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Socials</h3>
+                        <div class="social-links">
+                            <a href="https://x.com/UpsaUganda?t=FBAZ00aZQBx4D5VwXDiEow&s=09" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://whatsapp.com/channel/0029Vafrk3n6GcGAbblz9n0v" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Uganda Pharmaceutical Students Association. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="share-links.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
