@@ -995,7 +995,7 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         name: 'Kakande Sharifah',
         role: 'University Coordinator - KIU',
-        image: 'https://picsum.photos/seed/kc/300/400',
+        image: 'images/kiu.jpg',
         bio: 'Coordinates activities among KIUPSA students and liaises with national leadership.',
         whatsapp: '1234567890'
       },
